@@ -1,0 +1,12 @@
+{% extends 'video/base.html' %}
+
+{% block content %}
+    {% for video in video_list %}
+        <a href="/video/{{ video.id }}">
+            <h4>Title : {{ video.title }}</h4>
+        </a>
+        <h4>Artist : {{ video.artist }}</h4>
+        <br>
+        <br>
+    {% endfor %}
+{% endblock %}

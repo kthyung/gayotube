@@ -1,0 +1,465 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="GayoTube Responsive web template, Bootstrap Web Templates, Gayo, Kpop, Music" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <title>GayoTube - 가요 차트 비디오 모음</title>
+    <!-- bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel='stylesheet' type='text/css' media="all" />
+    <!-- //bootstrap -->
+    <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+    <!-- Custom Theme files -->
+    <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' media="all" />
+    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <!--start-smoth-scrolling-->
+    <!-- fonts -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <!-- //fonts -->
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><h1 class="text-primary"><strong>GayoTube</strong></h1></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+			<div class="top-search">
+				<form class="navbar-form navbar-right" action="/search" method="post">
+                    {% csrf_token %}
+                    <div class="col-sm-2">
+                        <select class="mdb-select md-form colorful-select dropdown-primary" id="search" name="search_type" searchable="Search here..">
+                          <option value="kpop_artist">KPOP 아티스트</option>
+                          <option value="kpop_title">KPOP 곡명</option>
+                          <option value="pop_artist">POP 아티스트</option>
+                          <option value="pop_title">POP 곡명</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-10">
+                        <input id="search_text" name="search_text" type="text" class="form-control" placeholder="Search...">
+                        <input type="submit" value=" ">
+                    </div>
+				</form>
+			</div>
+        </div>
+		<div class="clearfix"> </div>
+      </div>
+    </nav>
+    <div class="col-sm-3 col-md-2 sidebar">
+        <div class="top-navigation">
+            <div class="t-menu">MENU</div>
+            <div class="t-img">
+                <img src="{% static 'images/lines.png' %}" alt="" />
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="drop-navigation drop-navigation">
+          <ul class="nav nav-sidebar">
+              <li><a href="#" class="menu">KPOP</a></li>
+              <li><a href="#" class="menu1" id="menu-1"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>년도별 히트곡<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                <ul class="cl-effect-1" id="cl-effect-1">
+                    <li><a href="#" class="menu1-1" id="menu1-1">2010년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-2010" style="margin-left: 20px;">
+                            <li><a href="/index/2018" id="submenu-2018">2018</a></li>
+                            <li><a href="/index/2017" id="submenu-2017">2017</a></li>
+                            <li><a href="/index/2016" id="submenu-2016">2016</a></li>
+                            <li><a href="/index/2015" id="submenu-2015">2015</a></li>
+                            <li><a href="/index/2014" id="submenu-2014">2014</a></li>
+                            <li><a href="/index/2013" id="submenu-2013">2013</a></li>
+                            <li><a href="/index/2012" id="submenu-2012">2012</a></li>
+                            <li><a href="/index/2011" id="submenu-2011">2011</a></li>
+                            <li><a href="/index/2010" id="submenu-2010">2010</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-2" id="menu1-2">2000년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-2000" style="margin-left: 20px;">
+                            <li><a href="/index/2009" id="submenu-2009">2009</a></li>
+                            <li><a href="/index/2008" id="submenu-2008">2008</a></li>
+                            <li><a href="/index/2007" id="submenu-2007">2007</a></li>
+                            <li><a href="/index/2006" id="submenu-2006">2006</a></li>
+                            <li><a href="/index/2005" id="submenu-2005">2005</a></li>
+                            <li><a href="/index/2004" id="submenu-2004">2004</a></li>
+                            <li><a href="/index/2003" id="submenu-2003">2003</a></li>
+                            <li><a href="/index/2002" id="submenu-2002">2002</a></li>
+                            <li><a href="/index/2001" id="submenu-2001">2001</a></li>
+                            <li><a href="/index/2000" id="submenu-2000">2000</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-3" id="menu1-3">1990년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-1990" style="margin-left: 20px;">
+                            <li><a href="/index/1999" id="submenu-1999">1999</a></li>
+                            <li><a href="/index/1998" id="submenu-1998">1998</a></li>
+                            <li><a href="/index/1997" id="submenu-1997">1997</a></li>
+                            <li><a href="/index/1996" id="submenu-1996">1996</a></li>
+                            <li><a href="/index/1995" id="submenu-1995">1995</a></li>
+                            <li><a href="/index/1994" id="submenu-1994">1994</a></li>
+                            <li><a href="/index/1993" id="submenu-1993">1993</a></li>
+                            <li><a href="/index/1992" id="submenu-1992">1992</a></li>
+                            <li><a href="/index/1991" id="submenu-1991">1991</a></li>
+                            <li><a href="/index/1990" id="submenu-1990">1990</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-4" id="menu1-4">1980년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-1980" style="margin-left: 20px;">
+                            <li><a href="/index/1989" id="submenu-1989">1989</a></li>
+                            <li><a href="/index/1988" id="submenu-1988">1988</a></li>
+                            <li><a href="/index/1987" id="submenu-1987">1987</a></li>
+                            <li><a href="/index/1986" id="submenu-1986">1986</a></li>
+                            <li><a href="/index/1985" id="submenu-1985">1985</a></li>
+                            <li><a href="/index/1984" id="submenu-1984">1984</a></li>
+                            <li><a href="/index/1983" id="submenu-1983">1983</a></li>
+                            <li><a href="/index/1982" id="submenu-1982">1982</a></li>
+                            <li><a href="/index/1981" id="submenu-1981">1981</a></li>
+                            <li><a href="/index/1980" id="submenu-1980">1980</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-5" id="menu1-5">1970년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-1970" style="margin-left: 20px;">
+                            <li><a href="/index/1979" id="submenu-1979">1979</a></li>
+                            <li><a href="/index/1978" id="submenu-1978">1978</a></li>
+                            <li><a href="/index/1977" id="submenu-1977">1977</a></li>
+                            <li><a href="/index/1976" id="submenu-1976">1976</a></li>
+                            <li><a href="/index/1975" id="submenu-1975">1975</a></li>
+                            <li><a href="/index/1974" id="submenu-1974">1974</a></li>
+                            <li><a href="/index/1973" id="submenu-1973">1973</a></li>
+                            <li><a href="/index/1972" id="submenu-1972">1972</a></li>
+                            <li><a href="/index/1971" id="submenu-1971">1971</a></li>
+                            <li><a href="/index/1970" id="submenu-1970">1970</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-6" id="menu1-6">1960년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-1960" style="margin-left: 20px;">
+                            <li><a href="/index/1969" id="submenu-1969">1969</a></li>
+                            <li><a href="/index/1968" id="submenu-1968">1968</a></li>
+                            <li><a href="/index/1967" id="submenu-1967">1967</a></li>
+                            <li><a href="/index/1966" id="submenu-1966">1966</a></li>
+                            <li><a href="/index/1965" id="submenu-1965">1965</a></li>
+                            <li><a href="/index/1964" id="submenu-1964">1964</a></li>
+                        </ul>
+                </ul>
+                <!-- script-for-menu -->
+                <script>
+                    $( "li a.menu1#menu-1" ).click(function() {
+                        $( "ul.cl-effect-1#cl-effect-1" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-1#menu1-1" ).click(function() {
+                        $( "ul.cl-effect-2#menu-2010" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-2#menu1-2" ).click(function() {
+                        $( "ul.cl-effect-2#menu-2000" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-3#menu1-3" ).click(function() {
+                        $( "ul.cl-effect-2#menu-1990" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-4#menu1-4" ).click(function() {
+                        $( "ul.cl-effect-2#menu-1980" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-5#menu1-5" ).click(function() {
+                        $( "ul.cl-effect-2#menu-1970" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-6#menu1-6" ).click(function() {
+                        $( "ul.cl-effect-2#menu-1960" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                </script>
+              <li><a href="#" class="menu1" id="menu-2"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>장르별 곡모음<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+              <ul class="cl-effect-1" id="cl-effect-2">
+                  <li><a href="/genre/100" class="menu2-1" id="menu2-1">발라드</a></li>
+                  <li><a href="/genre/200" class="menu2-2" id="menu2-2">댄스</a></li>
+                  <li><a href="/genre/300" class="menu2-3" id="menu2-3">랩/힙합</a></li>
+                  <li><a href="/genre/400" class="menu2-4" id="menu2-4">R&B/Soul</a></li>
+                  <li><a href="/genre/500" class="menu2-5" id="menu2-5">인디음악</a></li>
+                  <li><a href="/genre/600" class="menu2-6" id="menu2-6">록/메탈</a></li>
+                  <li><a href="/genre/700" class="menu2-7" id="menu2-7">트로트</a></li>
+                  <li><a href="/genre/800" class="menu2-8" id="menu2-8">포크/블루스</a></li>
+              </ul>
+                <script>
+                    $( "li a.menu1#menu-2" ).click(function() {
+                        $( "ul.cl-effect-1#cl-effect-2" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                </script>
+              <br>
+              <li><a href="#" class="menu">POP</a></li>
+              <li><a href="#" class="menu1" id="menu-3"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>년도별 히트곡<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                <ul class="cl-effect-1" id="cl-effect-3">
+                    <li><a href="#" class="menu1-1" id="menu3-1">2010년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-p2010" style="margin-left: 20px;">
+                            <li><a href="/index/p2018" id="submenu-p2018">2018</a></li>
+                            <li><a href="/index/p2017" id="submenu-p2017">2017</a></li>
+                            <li><a href="/index/p2016" id="submenu-p2016">2016</a></li>
+                            <li><a href="/index/p2015" id="submenu-p2015">2015</a></li>
+                            <li><a href="/index/p2014" id="submenu-p2014">2014</a></li>
+                            <li><a href="/index/p2013" id="submenu-p2013">2013</a></li>
+                            <li><a href="/index/p2012" id="submenu-p2012">2012</a></li>
+                            <li><a href="/index/p2011" id="submenu-p2011">2011</a></li>
+                            <li><a href="/index/p2010" id="submenu-p2010">2010</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-2" id="menu3-2">2000년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-p2000" style="margin-left: 20px;">
+                            <li><a href="/index/p2009" id="submenu-p2009">2009</a></li>
+                            <li><a href="/index/p2008" id="submenu-p2008">2008</a></li>
+                            <li><a href="/index/p2007" id="submenu-p2007">2007</a></li>
+                            <li><a href="/index/p2006" id="submenu-p2006">2006</a></li>
+                            <li><a href="/index/p2005" id="submenu-p2005">2005</a></li>
+                            <li><a href="/index/p2004" id="submenu-p2004">2004</a></li>
+                            <li><a href="/index/p2003" id="submenu-p2003">2003</a></li>
+                            <li><a href="/index/p2002" id="submenu-p2002">2002</a></li>
+                            <li><a href="/index/p2001" id="submenu-p2001">2001</a></li>
+                            <li><a href="/index/p2000" id="submenu-p2000">2000</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-3" id="menu3-3">1990년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-p1990" style="margin-left: 20px;">
+                            <li><a href="/index/p1999" id="submenu-p1999">1999</a></li>
+                            <li><a href="/index/p1998" id="submenu-p1998">1998</a></li>
+                            <li><a href="/index/p1997" id="submenu-p1997">1997</a></li>
+                            <li><a href="/index/p1996" id="submenu-p1996">1996</a></li>
+                            <li><a href="/index/p1995" id="submenu-p1995">1995</a></li>
+                            <li><a href="/index/p1994" id="submenu-p1994">1994</a></li>
+                            <li><a href="/index/p1993" id="submenu-p1993">1993</a></li>
+                            <li><a href="/index/p1992" id="submenu-p1992">1992</a></li>
+                            <li><a href="/index/p1991" id="submenu-p1991">1991</a></li>
+                            <li><a href="/index/p1990" id="submenu-p1990">1990</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-4" id="menu3-4">1980년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-p1980" style="margin-left: 20px;">
+                            <li><a href="/index/p1989" id="submenu-p1989">1989</a></li>
+                            <li><a href="/index/p1988" id="submenu-p1988">1988</a></li>
+                            <li><a href="/index/p1987" id="submenu-p1987">1987</a></li>
+                            <li><a href="/index/p1986" id="submenu-p1986">1986</a></li>
+                            <li><a href="/index/p1985" id="submenu-p1985">1985</a></li>
+                            <li><a href="/index/p1984" id="submenu-p1984">1984</a></li>
+                            <li><a href="/index/p1983" id="submenu-p1983">1983</a></li>
+                            <li><a href="/index/p1982" id="submenu-p1982">1982</a></li>
+                            <li><a href="/index/p1981" id="submenu-p1981">1981</a></li>
+                            <li><a href="/index/p1980" id="submenu-p1980">1980</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-5" id="menu3-5">1970년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-p1970" style="margin-left: 20px;">
+                            <li><a href="/index/p1979" id="submenu-p1979">1979</a></li>
+                            <li><a href="/index/p1978" id="submenu-p1978">1978</a></li>
+                            <li><a href="/index/p1977" id="submenu-p1977">1977</a></li>
+                            <li><a href="/index/p1976" id="submenu-p1976">1976</a></li>
+                            <li><a href="/index/p1975" id="submenu-p1975">1975</a></li>
+                            <li><a href="/index/p1974" id="submenu-p1974">1974</a></li>
+                            <li><a href="/index/p1973" id="submenu-p1973">1973</a></li>
+                            <li><a href="/index/p1972" id="submenu-p1972">1972</a></li>
+                            <li><a href="/index/p1971" id="submenu-p1971">1971</a></li>
+                            <li><a href="/index/p1970" id="submenu-p1970">1970</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-6" id="menu3-6">1960년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-p1960" style="margin-left: 20px;">
+                            <li><a href="/index/p1969" id="submenu-p1969">1969</a></li>
+                            <li><a href="/index/p1968" id="submenu-p1968">1968</a></li>
+                            <li><a href="/index/p1967" id="submenu-p1967">1967</a></li>
+                            <li><a href="/index/p1966" id="submenu-p1966">1966</a></li>
+                            <li><a href="/index/p1965" id="submenu-p1965">1965</a></li>
+                            <li><a href="/index/p1964" id="submenu-p1964">1964</a></li>
+                            <li><a href="/index/p1964" id="submenu-p1963">1963</a></li>
+                            <li><a href="/index/p1964" id="submenu-p1962">1962</a></li>
+                            <li><a href="/index/p1964" id="submenu-p1961">1961</a></li>
+                            <li><a href="/index/p1964" id="submenu-p1960">1960</a></li>
+                        </ul>
+                    <li><a href="#" class="menu1-7" id="menu3-7">1950년대<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                        <ul class="cl-effect-2" id="menu-p1950" style="margin-left: 20px;">
+                            <li><a href="/index/p1959" id="submenu-p1959">1959</a></li>
+                            <li><a href="/index/p1958" id="submenu-p1958">1958</a></li>
+                            <li><a href="/index/p1957" id="submenu-p1957">1957</a></li>
+                            <li><a href="/index/p1956" id="submenu-p1956">1956</a></li>
+                            <li><a href="/index/p1955" id="submenu-p1955">1955</a></li>
+                        </ul>
+                </ul>
+                <!-- script-for-menu -->
+                <script>
+                    $( "li a.menu1#menu-3" ).click(function() {
+                        $( "ul.cl-effect-1#cl-effect-3" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-1#menu3-1" ).click(function() {
+                        $( "ul.cl-effect-2#menu-p2010" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-2#menu3-2" ).click(function() {
+                        $( "ul.cl-effect-2#menu-p2000" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-3#menu3-3" ).click(function() {
+                        $( "ul.cl-effect-2#menu-p1990" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-4#menu3-4" ).click(function() {
+                        $( "ul.cl-effect-2#menu-p1980" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-5#menu3-5" ).click(function() {
+                        $( "ul.cl-effect-2#menu-p1970" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-6#menu3-6" ).click(function() {
+                        $( "ul.cl-effect-2#menu-p1960" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                    $( "li a.menu1-7#menu3-7" ).click(function() {
+                        $( "ul.cl-effect-2#menu-p1950" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                </script>
+              <li><a href="#" class="menu1" id="menu-4"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>장르별 곡모음<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
+                <ul class="cl-effect-1" id="cl-effect-4">
+                  <li><a href="/genre/p900" class="menu4-1" id="menu4-1">POP</a></li>
+                  <li><a href="/genre/p1000" class="menu4-2" id="menu4-2">록/메탈</a></li>
+                  <li><a href="/genre/p1100" class="menu4-3" id="menu4-3">일렉트로니카</a></li>
+                  <li><a href="/genre/p1200" class="menu4-4" id="menu4-4">랩/힙합</a></li>
+                  <li><a href="/genre/p1300" class="menu4-5" id="menu4-5">R&B/Soul</a></li>
+                  <li><a href="/genre/p1400" class="menu4-6" id="menu4-6">포크/블루스/컨트리</a></li>
+              </ul>
+                <script>
+                    $( "li a.menu1#menu-4" ).click(function() {
+                        $( "ul.cl-effect-1#cl-effect-4" ).slideToggle( 300, function() {
+                        // Animation complete.
+                        });
+                    });
+                </script>
+          </ul>
+            <!-- script-for-menu -->
+            <script>
+                $( ".top-navigation" ).click(function() {
+                $( ".drop-navigation" ).slideToggle( 300, function() {
+                // Animation complete.
+                });
+                });
+
+                $(document).ready(function(){
+                    $("top-navigation").trigger("click");
+
+                    {% if view_type == 'kpop' %}
+                        $("li a.menu1#menu-1").trigger("click");
+
+                        var year = {{video_year}}
+                        if(year >= 2010 && year < 2020){
+                            $("li a.menu1-1#menu1-1").trigger("click");
+                        }else if(year >= 2000 && year < 2010){
+                            $("li a.menu1-2#menu1-2").trigger("click");
+                        }else if(year >= 1990 && year < 2000){
+                            $("li a.menu1-3#menu1-3").trigger("click");
+                        }else if(year >= 1980 && year < 1990){
+                            $("li a.menu1-4#menu1-4").trigger("click");
+                        }else if(year >= 1970 && year < 1980){
+                            $("li a.menu1-5#menu1-5").trigger("click");
+                        }else if(year >= 1960 && year < 1970){
+                            $("li a.menu1-6#menu1-6").trigger("click");
+                        }
+
+                        $("li a#submenu-{{video_year}}").parent().addClass("active");
+                    {% elif view_type == 'pop' %}
+                        $("li a.menu1#menu-3").trigger("click");
+
+                        var year = {{video_year}}
+                        if(year >= 2010 && year < 2020){
+                            $("li a.menu1-1#menu3-1").trigger("click");
+                        }else if(year >= 2000 && year < 2010){
+                            $("li a.menu1-2#menu3-2").trigger("click");
+                        }else if(year >= 1990 && year < 2000){
+                            $("li a.menu1-3#menu3-3").trigger("click");
+                        }else if(year >= 1980 && year < 1990){
+                            $("li a.menu1-4#menu3-4").trigger("click");
+                        }else if(year >= 1970 && year < 1980){
+                            $("li a.menu1-5#menu3-5").trigger("click");
+                        }else if(year >= 1960 && year < 1970){
+                            $("li a.menu1-6#menu3-6").trigger("click");
+                        }else if(year >= 1950 && year < 1960){
+                            $("li a.menu1-7#menu3-7").trigger("click");
+                        }
+
+                        $("li a#submenu-p{{video_year}}").parent().addClass("active");
+                    {% elif view_type == 'genre_kpop' %}
+                        $("li a.menu1#menu-2").trigger("click");
+
+                        var type = {{genre_type}}
+                        if(type == 100){
+                            $("li a#menu2-1").parent().addClass("active");
+                        }else if(type == 200){
+                            $("li a#menu2-2").parent().addClass("active");
+                        }else if(type == 300){
+                            $("li a#menu2-3").parent().addClass("active");
+                        }else if(type == 400){
+                            $("li a#menu2-4").parent().addClass("active");
+                        }else if(type == 500){
+                            $("li a#menu2-5").parent().addClass("active");
+                        }else if(type == 600){
+                            $("li a#menu2-6").parent().addClass("active");
+                        }else if(type == 700){
+                            $("li a#menu2-7").parent().addClass("active");
+                        }else if(type == 800){
+                            $("li a#menu2-8").parent().addClass("active");
+                        }
+                    {% elif view_type == 'genre_pop' %}
+                        $("li a.menu1#menu-4").trigger("click");
+
+                        var type = {{genre_type}}
+                        if(type == 900){
+                            $("li a#menu4-1").parent().addClass("active");
+                        }else if(type == 1000){
+                            $("li a#menu4-2").parent().addClass("active");
+                        }else if(type == 1100){
+                            $("li a#menu4-3").parent().addClass("active");
+                        }else if(type == 1200){
+                            $("li a#menu4-4").parent().addClass("active");
+                        }else if(type == 1300){
+                            $("li a#menu4-5").parent().addClass("active");
+                        }else if(type == 1400){
+                            $("li a#menu4-6").parent().addClass("active");
+                        }
+                    {% elif view_type == 'kpop_artist' or view_type == 'kpop_title' or view_type == 'pop_artist' or view_type == 'pop_title' %}
+                        $("select#search").val("{{view_type}}").prop("selected", true);
+                    {% endif %}
+                });
+            </script>
+        </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+</body>
+</html>
