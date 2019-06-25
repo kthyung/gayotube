@@ -102,6 +102,6 @@ if __name__=='__main__':
 
     artists = PopArtistVideo.objects.all().order_by('artist').values_list('artist', flat=True).distinct()
     for artist in artists:
-        if artist >= 'Mariah Carey':
+        if artist >= 'Peter Cetera':
             parse_and_append(artist)
 
