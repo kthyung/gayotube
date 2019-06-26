@@ -42,7 +42,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 			<div class="top-search">
-				<form class="navbar-form navbar-right" action="/search" method="post">
+				<form class="navbar-form navbar-right" action="/search" method="post" id="search_form">
                     {% csrf_token %}
                     <div class="col-sm-2">
                         <select class="mdb-select md-form colorful-select dropdown-primary" id="search" name="search_type" searchable="Search here..">
@@ -446,6 +446,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         }
                     {% elif view_type == 'kpop_artist' or view_type == 'kpop_title' or view_type == 'pop_artist' or view_type == 'pop_title' %}
                         $("select#search").val("{{view_type}}").prop("selected", true);
+                        $("form input#search_text").val("{{word}}");
                     {% endif %}
                 });
             </script>

@@ -84,9 +84,9 @@
                 }
             {% endfor %}
 
-            //$("div.song-info h3").empty();
-            //$("div.song-info h3").append(showVideoChart + ". " + "<a href='javascript:searchArtist()'>" + showVideoArtist + "</a>" + " - " + showVideoTitle);
-            $("div.song-info h3").text(showVideoChart + ". " + showVideoArtist + " - " + showVideoTitle);
+            $("div.song-info h3").empty();
+            $("div.song-info h3").append(showVideoChart + ". " + "<a href='javascript:searchArtist()'>" + showVideoArtist + "</a>" + " - " + showVideoTitle);
+            //$("div.song-info h3").text(showVideoChart + ". " + showVideoArtist + " - " + showVideoTitle);
             $(aTagSelect).addClass("active");
 
             loadVideo(showVideoKey, showVideoArtist, showVideoTitle);
@@ -229,14 +229,13 @@
 
           function searchArtist(){
             {% if view_type == 'kpop' or view_type == 'genre_kpop' %}
-                type = 'kpop_artist';
+                $("select#search").val("kpop_artist").prop("selected", true);
             {% elif view_type == 'pop' or view_type == 'genre_pop' %}
-                type = 'pop_artist';
+                $("select#search").val("pop_artist").prop("selected", true);
             {% endif %}
 
-            $.post("/search", {search_type: type, search_text: showVideoArtist}, function(result){
-
-            });
+            $("form input#search_text").val(showVideoArtist);
+            //$("form#search_form").submit();
           }
 
         var videoPlayMode = 1;

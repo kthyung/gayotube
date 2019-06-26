@@ -47,8 +47,12 @@ def video_search(request):
         elif search_type == 'pop_title':
             result_list = PopArtistVideo.objects.filter(title__contains=word).order_by('title')
 
-    return render(request, 'video/index.html',
-                  {'view_type': search_type, 'videos': result_list, 'word': word, 'video_index': 1})
+    if len(result_list) == 0:
+        return render(request, 'video/index_search_fail.html',
+                      {'view_type': search_type, 'videos': result_list, 'word': word, 'video_index': 1})
+    else:
+        return render(request, 'video/index.html',
+                      {'view_type': search_type, 'videos': result_list, 'word': word, 'video_index': 1})
 
 
 def video_artist(request, artist, index):
