@@ -11,8 +11,8 @@ from video.models import Video, GenreVideo, PopVideo, PopGenreVideo, ArtistVideo
 from selenium import webdriver
 
 
-def parse_and_append(artist_name):
-    print('kth parse_and_append() artist_name : ' + artist_name)
+def parse_and_append(page_index, playlist_num):
+    print('kth parse_and_append() page_index : ' + str(page_index) + ' , playlist_num : ' + playlist_num)
 
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
@@ -24,25 +24,43 @@ def parse_and_append(artist_name):
     options.add_argument("lang=ko_KR")  # 한국어!
     driver = webdriver.Chrome('/Users/kimtaehyeong/Desktop/python/gayotube/chromedriver', options=options)
     driver.implicitly_wait(3)
-    driver.get('https://www.melon.com/search/song/index.htm' + '?startIndex=1' + '&pageSize=50' +
-               '&q=' + artist_name + '&sort=hit' + '&section=artist' + '&subLinkOrText=L')
+    driver.get('https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm' + '?plylstSeq=' + playlist_num +
+               '&po=pageObj' + '&startIndex=' + page_index)
     html = driver.page_source  ## 페이지의 elements모두 가져오기
     soup = BeautifulSoup(html, 'html.parser')  ## BeautifulSoup사용하기
 
-    titles = soup.find_all("a", {"class": "fc_gray"})
+    titles = soup.find_all("div", {"class": "ellipsis rank01"})
+    artists = soup.find_all("div", {"class": "ellipsis rank02"})
 
     title = []
-    count = 0
+    artist = []
+
+    if len(titles) == 0:
+        return
+
     for t in titles:
-        videos = PopArtistVideo.objects.filter(artist=artist_name.strip(), title=t.text.strip())
-        if len(videos) == 0:
-            title.append(t.text)
-        count += 1
-        if count >= 5:
-            break
+        if t.find('a') is None:
+            if t.find('div', {'class': 'ellipsis'}) is None:
+                title.append(t.find('span', {'class': 'checkEllipsis'}).text)
+            else:
+                title.append(t.find('div', {'class': 'ellipsis'}).text)
+        else:
+            title.append(t.find('a').text)
+
+    for a in artists:
+        if a.find('a') is None:
+            if a.find('div', {'class': 'ellipsis'}) is None:
+                artist.append(a.find('span', {'class': 'checkEllipsis'}).text)
+            else:
+                artist.append(a.find('div', {'class': 'ellipsis'}).text)
+        else:
+            artist.append(a.find('a').text)
 
     for i in range(len(title)):
-        parse_and_append2(10000, i+1, title[i], artist_name)
+        videos = PopGenreVideo.objects.filter(type=genre_type, title=title[i]).order_by('chart')
+        if len(videos) == 0:
+            parse_and_append2(genre_type, page_index + i, title[i], artist[i])
+    parse_and_append(page_index + 50, playlist_num)
 
 
 def parse_and_append2(video_type, chart, title, artist):
@@ -76,32 +94,16 @@ def parse_and_append2(video_type, chart, title, artist):
             youtube_text2 = youtube_text[index + 8:index + 26]
             if index != -1:
                 key = youtube_text2.split('\"')[0]
-        break
-    PopArtistVideo(type=video_type, chart=chart, title=title.strip(), artist=artist.strip(), video_key=key).save()
+            break
+
+    PopGenreVideo(type=video_type, chart=chart, title=title, artist=artist, video_key=key).save()
     time.sleep(2)
 
 
 # 이 명령어는 이 파일이 import가 아닌 python에서 직접 실행할 경우에만 아래 코드가 동작하도록 합니다.
 if __name__=='__main__':
-    # PopArtistVideo.objects.all().delete()
-    #
-    # artist_list1 = PopVideo.objects.all().order_by('artist', 'title')
-    # artist_list2 = PopGenreVideo.objects.all().order_by('artist', 'title')
-    #
-    # for item in artist_list1:
-    #     videos = PopArtistVideo.objects.filter(artist=item.artist.strip(), title=item.title.strip())
-    #     if len(videos) == 0:
-    #         PopArtistVideo(type=item.type, chart=item.chart, title=item.title.strip(),
-    #                     artist=item.artist.strip(), video_key=item.video_key).save()
-    #
-    # for item2 in artist_list2:
-    #     videos = PopArtistVideo.objects.filter(artist=item2.artist.strip(), title=item2.title.strip())
-    #     if len(videos) == 0:
-    #         PopArtistVideo(type=item2.type, chart=item2.chart, title=item2.title.strip(),
-    #                     artist=item2.artist.strip(), video_key=item2.video_key).save()
+    playlist = '447904040'
+    page = 1
+    parse_and_append(page, playlist)
 
-    artists = PopArtistVideo.objects.all().order_by('artist').values_list('artist', flat=True).distinct()
-    for artist in artists:
-        if artist >= 'Tyga':
-            parse_and_append(artist)
 
