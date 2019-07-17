@@ -46,10 +46,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     {% csrf_token %}
                     <div class="col-sm-2">
                         <select class="mdb-select md-form colorful-select dropdown-primary" id="search" name="search_type" searchable="Search here..">
-                          <option value="kpop_artist">KPOP 아티스트</option>
-                          <option value="kpop_title">KPOP 곡명</option>
-                          <option value="pop_artist">POP 아티스트</option>
-                          <option value="pop_title">POP 곡명</option>
+                          <option value="search_artist">아티스트명</option>
+                          <option value="search_title">곡명</option>
                         </select>
                     </div>
                     <div class="col-sm-10">
@@ -354,6 +352,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         });
                     });
                 </script>
+              <br>
+              <li><a href="/playlist" class="menu1" id="menu-5"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>플레이리스트 곡모음</a></li>
           </ul>
             <!-- script-for-menu -->
             <script>
@@ -447,6 +447,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     {% elif view_type == 'kpop_artist' or view_type == 'kpop_title' or view_type == 'pop_artist' or view_type == 'pop_title' %}
                         $("select#search").val("{{view_type}}").prop("selected", true);
                         $("form input#search_text").val("{{word}}");
+                    {% elif view_type == 'playlist' %}
+                        $("li a#menu-5").parent().addClass("active");
                     {% endif %}
                 });
             </script>

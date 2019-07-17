@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from .models import Video, PopVideo, ArtistVideo, PopArtistVideo, GenreVideo, PopGenreVideo
+from .models import Video, PopVideo, ArtistVideo, PopArtistVideo, GenreVideo, PopGenreVideo, PlaylistVideo
+import random
 
 
 def video_blank(request):
-    return redirect('/index/2018')
+    return redirect('/playlist')
 
 
 def video_index(request, year):
@@ -38,14 +39,10 @@ def video_search(request):
     if request.method == 'POST':
         word = request.POST.get('search_text', '')
         search_type = request.POST.get('search_type', '')
-        if search_type == 'kpop_artist':
+        if search_type == 'search_artist':
             result_list = ArtistVideo.objects.filter(artist__contains=word).order_by('title')
-        elif search_type == 'kpop_title':
+        elif search_type == 'search_title':
             result_list = ArtistVideo.objects.filter(title__contains=word).order_by('title')
-        elif search_type == 'pop_artist':
-            result_list = PopArtistVideo.objects.filter(artist__contains=word).order_by('title')
-        elif search_type == 'pop_title':
-            result_list = PopArtistVideo.objects.filter(title__contains=word).order_by('title')
 
     if len(result_list) == 0:
         return render(request, 'video/index_search_fail.html',
@@ -53,6 +50,22 @@ def video_search(request):
     else:
         return render(request, 'video/index.html',
                       {'view_type': search_type, 'videos': result_list, 'word': word, 'video_index': 1})
+
+
+def video_playlist(request):
+    pl_names = PlaylistVideo.objects.all().order_by('playlist_name').values_list('playlist_name', flat=True).distinct()
+
+    if request.method == 'GET':
+        select_index = random.randint(0, len(pl_names) - 1)
+    elif request.method == 'POST':
+        select_index = int(request.POST.get('playlist_list', ''))
+
+    select_playlist_name = pl_names[select_index]
+
+    videos = PlaylistVideo.objects.filter(playlist_name=select_playlist_name).order_by('chart')
+    return render(request, 'video/playlist.html',
+                  {'view_type': 'playlist', 'videos': videos, 'playlist_index': str(select_index),
+                   'playlist_names': pl_names, 'video_index': 1})
 
 
 def video_artist(request, artist, index):

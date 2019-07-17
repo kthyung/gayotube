@@ -229,9 +229,9 @@
 
           function searchArtist(){
             {% if view_type == 'kpop' or view_type == 'genre_kpop' %}
-                $("select#search").val("kpop_artist").prop("selected", true);
+                $("select#search").val("search_artist").prop("selected", true);
             {% elif view_type == 'pop' or view_type == 'genre_pop' %}
-                $("select#search").val("pop_artist").prop("selected", true);
+                $("select#search").val("search_artist").prop("selected", true);
             {% endif %}
 
             $("form input#search_text").val(showVideoArtist);

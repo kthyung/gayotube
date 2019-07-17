@@ -7,7 +7,7 @@ import time
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gayotube.settings")
 django.setup()
 
-from video.models import Video, GenreVideo, PopVideo, PopGenreVideo, ArtistVideo, PopArtistVideo
+from video.models import Video, GenreVideo, PopVideo, PopGenreVideo, ArtistVideo, PlaylistVideo
 from selenium import webdriver
 
 
@@ -34,7 +34,7 @@ def parse_and_append(artist_name):
     title = []
     count = 0
     for t in titles:
-        videos = PopArtistVideo.objects.filter(artist=artist_name.strip(), title=t.text.strip())
+        videos = ArtistVideo.objects.filter(artist=artist_name.strip(), title=t.text.strip())
         if len(videos) == 0:
             title.append(t.text)
         count += 1
@@ -77,31 +77,52 @@ def parse_and_append2(video_type, chart, title, artist):
             if index != -1:
                 key = youtube_text2.split('\"')[0]
         break
-    PopArtistVideo(type=video_type, chart=chart, title=title.strip(), artist=artist.strip(), video_key=key).save()
+    ArtistVideo(type=video_type, chart=chart, title=title.strip(), artist=artist.strip(), video_key=key).save()
     time.sleep(2)
 
 
 # 이 명령어는 이 파일이 import가 아닌 python에서 직접 실행할 경우에만 아래 코드가 동작하도록 합니다.
 if __name__=='__main__':
-    # PopArtistVideo.objects.all().delete()
-    #
-    # artist_list1 = PopVideo.objects.all().order_by('artist', 'title')
-    # artist_list2 = PopGenreVideo.objects.all().order_by('artist', 'title')
-    #
-    # for item in artist_list1:
-    #     videos = PopArtistVideo.objects.filter(artist=item.artist.strip(), title=item.title.strip())
-    #     if len(videos) == 0:
-    #         PopArtistVideo(type=item.type, chart=item.chart, title=item.title.strip(),
-    #                     artist=item.artist.strip(), video_key=item.video_key).save()
-    #
-    # for item2 in artist_list2:
-    #     videos = PopArtistVideo.objects.filter(artist=item2.artist.strip(), title=item2.title.strip())
-    #     if len(videos) == 0:
-    #         PopArtistVideo(type=item2.type, chart=item2.chart, title=item2.title.strip(),
-    #                     artist=item2.artist.strip(), video_key=item2.video_key).save()
+    ArtistVideo.objects.all().delete()
 
-    artists = PopArtistVideo.objects.all().order_by('artist').values_list('artist', flat=True).distinct()
-    for artist in artists:
-        if artist >= 'Tyga':
-            parse_and_append(artist)
+    artist_list1 = Video.objects.all().order_by('artist', 'title')
+    artist_list2 = GenreVideo.objects.all().order_by('artist', 'title')
+    artist_list3 = PopVideo.objects.all().order_by('artist', 'title')
+    artist_list4 = PopGenreVideo.objects.all().order_by('artist', 'title')
+    artist_list5 = PlaylistVideo.objects.all().order_by('artist', 'title')
+
+    for item in artist_list1:
+        videos = ArtistVideo.objects.filter(artist=item.artist.strip(), title=item.title.strip())
+        if len(videos) == 0:
+            ArtistVideo(type=item.type, chart=item.chart, title=item.title.strip(),
+                        artist=item.artist.strip(), video_key=item.video_key).save()
+
+    for item2 in artist_list2:
+        videos = ArtistVideo.objects.filter(artist=item2.artist.strip(), title=item2.title.strip())
+        if len(videos) == 0:
+            ArtistVideo(type=item2.type, chart=item2.chart, title=item2.title.strip(),
+                         artist=item2.artist.strip(), video_key=item2.video_key).save()
+
+    for item3 in artist_list3:
+        videos = ArtistVideo.objects.filter(artist=item3.artist.strip(), title=item3.title.strip())
+        if len(videos) == 0:
+            ArtistVideo(type=item3.type, chart=item3.chart, title=item3.title.strip(),
+                         artist=item3.artist.strip(), video_key=item3.video_key).save()
+
+    for item4 in artist_list4:
+        videos = ArtistVideo.objects.filter(artist=item4.artist.strip(), title=item4.title.strip())
+        if len(videos) == 0:
+            ArtistVideo(type=item4.type, chart=item4.chart, title=item4.title.strip(),
+                         artist=item4.artist.strip(), video_key=item4.video_key).save()
+
+    for item5 in artist_list5:
+        videos = ArtistVideo.objects.filter(artist=item5.artist.strip(), title=item5.title.strip())
+        if len(videos) == 0:
+            ArtistVideo(type=item5.type, chart=item5.chart, title=item5.title.strip(),
+                         artist=item5.artist.strip(), video_key=item5.video_key).save()
+
+    # artists = ArtistVideo.objects.all().order_by('artist').values_list('artist', flat=True).distinct()
+    # for artist in artists:
+    #     if artist >= 'Tyga':
+    #         parse_and_append(artist)
 
