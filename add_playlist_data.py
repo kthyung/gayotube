@@ -96,9 +96,9 @@ def parse_and_append2(page_index, tag_num):
                     break
 
     for i in range(len(playlist_code)):
-        videos = PlaylistVideo.objects.filter(playlist_code=playlist_code[i]).order_by('playlist_code')
-        if len(videos) == 0:
-            parse_and_append3(1, tag_num, playlist_code[i])
+        #videos = PlaylistVideo.objects.filter(playlist_code=playlist_code[i]).order_by('playlist_code')
+        #if len(videos) == 0:
+        parse_and_append3(1, tag_num, playlist_code[i])
 
     driver.close()
     driver.quit()
