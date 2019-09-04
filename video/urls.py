@@ -12,4 +12,5 @@ urlpatterns = [
     path('new', views.video_new, name='new'),
     path('video/<int:video_id>/', views.video_detail, name='detail'),
     path('playlist', views.video_playlist, name='playlist'),
+    path('favorite/playlist', views.video_favorite_playlist, name='favorite'),
 ]

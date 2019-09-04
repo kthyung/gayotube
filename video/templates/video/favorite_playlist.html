@@ -1,0 +1,264 @@
+{% extends 'video/base2.html' %}
+{% load static %}
+{% block content %}
+    <div class="col-sm-12 main">
+        <div class="show-top-grids">
+            <div class="col-sm-12 single-left">
+                <div>
+                    <form action="/favorite/playlist" method="post" id="playlist_form">
+                        {% csrf_token %}
+                        <select class="mdb-select md-form colorful-select dropdown-primary" id="playlist_list" name="playlist_list" style="width:16%;" onchange="this.form.submit()">
+                            {% for name in playlist_names %}
+                                <option value="{{ forloop.counter0 }}">{{name}}</option>
+                            {% endfor %}
+                        </select>
+                    </form>
+                </div>
+                <div class="song-grid-right">
+                    <div class="share">
+                        <ul>
+                            {% for video in videos %}
+                                <li><a href="javascript:void(0)" onclick="setViewLayout({{ forloop.counter }})" class="title" id="index{{ forloop.counter }}">{{ forloop.counter }}.{{video.artist}} - {{video.title}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="song">
+                    <div class="song-info">
+                        <h3></h3>
+                    </div>
+                    <div id="video_view">
+                        <iframe id="video_frame" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="song-button">
+                        <div class="btn-group btn-group-lg" role="group" aria-label="video_status">
+                            <a href="javascript:playPrevVideo();" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-backward"></span></a>
+                            <a href="javascript:playPauseVideo();" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-play" id="video_status_play"></span></a>
+                            <a href="javascript:playNextVideo();" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-forward"></span></a>
+                            <a href="javascript:changePlayMode();" class="btn btn-primary btn-lg" id="video_change_mode">전곡 반복재생</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © 2019 GayoTube. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+    <div class="clearfix"> </div>
+	<div class="drop-menu">
+		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
+		  <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+		  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+		</ul>
+	</div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        var currentPlayChart = 1;
+
+        var showVideoChart;
+        var showVideoArtist;
+        var showVideoTitle;
+        var showVideoKey;
+        var aTagSelect;
+
+        function setViewLayout(index){
+            currentPlayChart = index;
+
+            $("a").removeClass("active");
+            {% for video in videos %}
+                if({{forloop.counter}} == index){
+                    showVideoChart = "{{forloop.counter}}";
+                    showVideoArtist = "{{video.artist}}";
+                    showVideoTitle = "{{video.title}}";
+                    showVideoKey = "{{video.video_key}}";
+
+                    aTagSelect = "a#index{{forloop.counter}}";
+                }
+            {% endfor %}
+
+            $("div.song-info h3").empty();
+            $("div.song-info h3").append(showVideoChart + ". " + "<a href='javascript:searchArtist()'>" + showVideoArtist + "</a>" + " - " + showVideoTitle);
+            //$("div.song-info h3").text(showVideoChart + ". " + showVideoArtist + " - " + showVideoTitle);
+            $(aTagSelect).addClass("active");
+
+            loadVideo(showVideoKey, showVideoArtist, showVideoTitle);
+        }
+
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          var player;
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('video_view', {
+              videoId: showVideoKey,
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+          }
+
+          function onPlayerReady(event) {
+             //event.target.playVideo();
+          }
+
+          var videoStatus;
+          function onPlayerStateChange(event) {
+            videoStatus = event.data;
+            if (event.data == YT.PlayerState.PLAYING) {
+                setVideoStatusLayout(true);
+            }else if (event.data == YT.PlayerState.ENDED) {
+                playNextVideo();
+            }else if (event.data == YT.PlayerState.PAUSED) {
+                setVideoStatusLayout(false);
+            }else if (event.data == YT.PlayerState.BUFFERING) {
+
+            }else if (event.data == YT.PlayerState.CUED) {
+
+            }
+          }
+
+          function loadVideo(key, artist, title) {
+            if(player != null){
+                document.title = 'GayoTube - 가요 차트 비디오 모음 : [Playing] ' + artist + ' - ' + title;
+
+                player.loadVideoById({
+                   'videoId': key,
+                   'suggestedQuality': 'large'
+                });
+            }
+          }
+
+          function playPrevVideo() {
+              if(player != null){
+                if(videoPlayMode == 1){
+                    var len = {{videos.count}}
+                    var num = currentPlayChart-1;
+                    if(num <= 0){
+                        num = len;
+                    }
+
+                    setViewLayout(num);
+                }else if(videoPlayMode == 2){
+                    setViewLayout(currentPlayChart);
+                }else if(videoPlayMode == 3){
+                    var len = {{videos.count}}
+                    var num = Math.floor(Math.random() * len) + 1;
+
+                    setViewLayout(num);
+                }
+              }
+          }
+
+          function playNextVideo() {
+              if(player != null){
+                if(videoPlayMode == 1){
+                    var len = {{videos.count}}
+                    var num = currentPlayChart+1;
+                    if(num > len){
+                        num = 1;
+                    }
+
+                    setViewLayout(num);
+                }else if(videoPlayMode == 2){
+                    setViewLayout(currentPlayChart);
+                }else if(videoPlayMode == 3){
+                    var len = {{videos.count}}
+                    var num = Math.floor(Math.random() * len) + 1;
+
+                    setViewLayout(num);
+                }
+              }
+          }
+
+          function playVideo() {
+             player.playVideo();
+          }
+
+          function pauseVideo() {
+             player.pauseVideo();
+          }
+
+          function stopVideo() {
+             player.stopVideo();
+          }
+
+          function setVideoStatusLayout(is_playing){
+            if(is_playing){
+                $("div.song-button span#video_status_play").removeClass("glyphicon-play");
+                $("div.song-button span#video_status_play").addClass("glyphicon-pause");
+            }else{
+                $("div.song-button span#video_status_play").removeClass("glyphicon-pause");
+                $("div.song-button span#video_status_play").addClass("glyphicon-play");
+            }
+          }
+
+          function playPauseVideo(){
+              if(player != null){
+                if (videoStatus == YT.PlayerState.PLAYING) {
+                    pauseVideo();
+                }else if (videoStatus == YT.PlayerState.PAUSED) {
+                    playVideo();
+                }
+              }
+          }
+
+          function changePlayMode(){
+            if(videoPlayMode == 1){
+                videoPlayMode = 2;
+                $("div.song-button a#video_change_mode").text('한곡 반복재생');
+            }else if(videoPlayMode == 2){
+                videoPlayMode = 3;
+                $("div.song-button a#video_change_mode").text('랜덤 반복재생');
+            }else if(videoPlayMode == 3){
+                videoPlayMode = 1;
+                $("div.song-button a#video_change_mode").text('전곡 반복재생');
+            }
+          }
+
+          function searchArtist(){
+            {% if view_type == 'kpop' or view_type == 'genre_kpop' %}
+                $("select#search").val("kpop_artist").prop("selected", true);
+            {% elif view_type == 'pop' or view_type == 'genre_pop' %}
+                $("select#search").val("pop_artist").prop("selected", true);
+            {% endif %}
+
+            $("form input#search_text").val(showVideoArtist);
+            //$("form#search_form").submit();
+          }
+
+        var videoPlayMode = 1;
+        $(window).load(function(){
+            setViewLayout(1);
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            {% if view_type == 'playlist' %}
+                $("select#playlist_list").val("{{playlist_index}}").prop("selected", true);
+                //console.log("kth playlist_index : " + {{playlist_index}});
+            {% endif %}
+        });
+    </script>
+{% endblock %}

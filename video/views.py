@@ -1,11 +1,12 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from .models import Video, PopVideo, ArtistVideo, PopArtistVideo, GenreVideo, PopGenreVideo, PlaylistVideo
+from .models import Video, PopVideo, ArtistVideo, PopArtistVideo
+from .models import GenreVideo, PopGenreVideo, PlaylistVideo, FavoritePlaylistVideo
 import random
 
 
 def video_blank(request):
-    return redirect('/playlist')
+    return redirect('/favorite/playlist')
 
 
 def video_index(request, year):
@@ -64,6 +65,22 @@ def video_playlist(request):
 
     videos = PlaylistVideo.objects.filter(playlist_name=select_playlist_name).order_by('chart')
     return render(request, 'video/playlist.html',
+                  {'view_type': 'playlist', 'videos': videos, 'playlist_index': str(select_index),
+                   'playlist_names': pl_names, 'video_index': 1})
+
+
+def video_favorite_playlist(request):
+    pl_names = FavoritePlaylistVideo.objects.all().order_by('playlist_name').values_list('playlist_name', flat=True).distinct()
+
+    if request.method == 'GET':
+        select_index = random.randint(0, len(pl_names) - 1)
+    elif request.method == 'POST':
+        select_index = int(request.POST.get('playlist_list', ''))
+
+    select_playlist_name = pl_names[select_index]
+
+    videos = FavoritePlaylistVideo.objects.filter(playlist_name=select_playlist_name).order_by('chart')
+    return render(request, 'video/favorite_playlist.html',
                   {'view_type': 'playlist', 'videos': videos, 'playlist_index': str(select_index),
                    'playlist_names': pl_names, 'video_index': 1})
 
