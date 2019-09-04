@@ -42,7 +42,7 @@ def parse_and_append(page_index, playlist_num):
     if last_date is not None:
         last_date_txt = last_date.text.strip()
 
-    compare_date(last_date_txt)
+    #compare_date(last_date_txt)
 
     titles = soup.find_all("div", {"class": "ellipsis rank01"})
     artists = soup.find_all("div", {"class": "ellipsis rank02"})
