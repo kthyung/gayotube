@@ -24,7 +24,7 @@ def parse_and_append(page_index, playlist_num):
                          "AppleWebKit/537.36 (KHTML, like Gecko) "
                          "Chrome/61.0.3163.100 Safari/537.36")
     options.add_argument("lang=ko_KR")  # 한국어!
-    driver = webdriver.Chrome('/Users/kimtaehyeong/Desktop/python/gayotube/chromedriver', options=options)
+    driver = webdriver.Chrome('/home/gayotube/gayotube/chromedriver', options=options)
     driver.get('https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm' +
                '?plylstSeq=' + playlist_num + '#params%5BplylstSeq%5D=' + playlist_num +
                '&po=pageObj' + '&startIndex=' + str(page_index))
@@ -99,7 +99,7 @@ def parse_and_append2(playlist_num, playlist_name, chart, title, artist):
                          "AppleWebKit/537.36 (KHTML, like Gecko) "
                          "Chrome/61.0.3163.100 Safari/537.36")
     options.add_argument("lang=ko_KR")  # 한국어!
-    driver = webdriver.Chrome('/Users/kimtaehyeong/Desktop/python/gayotube/chromedriver', options=options)
+    driver = webdriver.Chrome('/home/gayotube/gayotube/chromedriver', options=options)
     driver.get('https://www.youtube.com/results' +
                '?search_query=' + (artist2 + "+" + title2) + '&sp=EgIQAQ%253D%253D')
     driver.implicitly_wait(2)
@@ -126,7 +126,7 @@ def parse_and_append2(playlist_num, playlist_name, chart, title, artist):
 
 
 def compare_date(last_date_txt):
-    print('kth dompare_date() last_date_txt : ' + last_date_txt)
+    print('kth compare_date() last_date_txt : ' + last_date_txt)
     return True
 
 
