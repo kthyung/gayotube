@@ -24,7 +24,7 @@ def parse_and_append(page_index, playlist_num):
                          "AppleWebKit/537.36 (KHTML, like Gecko) "
                          "Chrome/61.0.3163.100 Safari/537.36")
     options.add_argument("lang=ko_KR")  # 한국어!
-    driver = webdriver.Chrome('/home/gayotube/gayotube/chromedriver', options=options)
+    driver = webdriver.Chrome('/Users/kim/Desktop/python/gayotube/chromedriver', options=options)
     driver.get('https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm' +
                '?plylstSeq=' + playlist_num + '#params%5BplylstSeq%5D=' + playlist_num +
                '&po=pageObj' + '&startIndex=' + str(page_index))
@@ -99,7 +99,7 @@ def parse_and_append2(playlist_num, playlist_name, chart, title, artist):
                          "AppleWebKit/537.36 (KHTML, like Gecko) "
                          "Chrome/61.0.3163.100 Safari/537.36")
     options.add_argument("lang=ko_KR")  # 한국어!
-    driver = webdriver.Chrome('/home/gayotube/gayotube/chromedriver', options=options)
+    driver = webdriver.Chrome('/Users/kim/Desktop/python/gayotube/chromedriver', options=options)
     driver.get('https://www.youtube.com/results' +
                '?search_query=' + (artist2 + "+" + title2) + '&sp=EgIQAQ%253D%253D')
     driver.implicitly_wait(2)
@@ -126,15 +126,19 @@ def parse_and_append2(playlist_num, playlist_name, chart, title, artist):
 
 
 def compare_date(last_date_txt):
-    print('kth compare_date() last_date_txt : ' + last_date_txt)
+    print('kth dompare_date() last_date_txt : ' + last_date_txt)
     return True
 
 
 # 이 명령어는 이 파일이 import가 아닌 python에서 직접 실행할 경우에만 아래 코드가 동작하도록 합니다.
 if __name__=='__main__':
-    playlist_codes = ['430995376', '404190989', '401311038', '408448859', '428205764',
-                      '439120376', '101571597', '405024652', '439684858', '430074447']
+    #playlist_codes = ['408448859', '439421521', '405024652', '430995376']
+    #playlist_codes = ['438600317', '428205764']
+    playlist_codes = ['425182189', '438219771']
 
-    for code in playlist_codes:
-        parse_and_append(1, code)
-    sys.exit()
+    FavoritePlaylistVideo.objects.all().delete()
+    #FavoritePlaylistVideo.objects.exclude(playlist_code__in=playlist_codes).delete()
+
+    #for code in playlist_codes:
+    #    parse_and_append(1, code)
+    #sys.exit()
