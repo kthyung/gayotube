@@ -1,405 +1,327 @@
 [
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6958,
+    "pk": 6989,
     "fields": {
         "playlist_code": "428205764",
         "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
         "type": 30000,
         "chart": 1,
-        "title": "ON",
-        "artist": "\ubc29\ud0c4\uc18c\ub144\ub2e8",
-        "video_key": "gwMa6gpoE9I"
+        "title": "LALALILALA",
+        "artist": "\uc5d0\uc774\ud504\ub9b4 (APRIL)",
+        "video_key": "lsK1b8vt0_c"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6959,
+    "pk": 6990,
     "fields": {
         "playlist_code": "428205764",
         "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
         "type": 30000,
         "chart": 2,
-        "title": "DAZZLE DAZZLE",
-        "artist": "\uc704\ud0a4\ubbf8\ud0a4 (Weki Meki)",
-        "video_key": "y9imOEt78Aw"
+        "title": "HOME",
+        "artist": "\uc608\uc9c0",
+        "video_key": "YHYv9rHMZ2Y"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6960,
+    "pk": 6991,
     "fields": {
         "playlist_code": "428205764",
         "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
         "type": 30000,
         "chart": 3,
-        "title": "FIESTA",
-        "artist": "IZ*ONE (\uc544\uc774\uc988\uc6d0)",
-        "video_key": "eDEFolvLn0A"
+        "title": "Dr.Feel Good",
+        "artist": "\ub77c\ub2c8\uc544",
+        "video_key": "gGN_W4VBZFo"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6961,
+    "pk": 6992,
     "fields": {
         "playlist_code": "428205764",
         "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
         "type": 30000,
         "chart": 4,
-        "title": "Uh-Oh",
-        "artist": "(\uc5ec\uc790)\uc544\uc774\ub4e4",
-        "video_key": "Mzs9peurc-8"
+        "title": "queen",
+        "artist": "\uc190\ub2f4\ube44",
+        "video_key": "rQOQRXE_3i8"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6962,
+    "pk": 6993,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 5,
+        "title": "\uae30\ub300\ud574",
+        "artist": "\uac78\uc2a4\ub370\uc774",
+        "video_key": "t8YXut6_56c"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 6994,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 6,
+        "title": "Physical (feat. \ud654\uc0ac)",
+        "artist": "Dua Lipa",
+        "video_key": "MWdwW3K1vGg"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 6995,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 7,
+        "title": "\ub364\ub354\ub7fc(Dumhdurum)",
+        "artist": "Apink (\uc5d0\uc774\ud551\ud06c)",
+        "video_key": "mrP_cpcuNEc"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 6996,
+    "fields": {
+        "playlist_code": "430351696",
+        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
+        "type": 30000,
+        "chart": 1,
+        "title": "Sparkle",
+        "artist": "iri",
+        "video_key": "s2lrXYmpi7w"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 6997,
     "fields": {
         "playlist_code": "405024652",
         "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
         "type": 30000,
-        "chart": 43,
-        "title": "North Face (Feat. Jvcki Wai)",
-        "artist": "\ucfe0\uae30 (Coogie)",
-        "video_key": "519Winkt0aM"
+        "chart": 143,
+        "title": "BLAME MY CIRCLE (feat. JUSTHIS, Owen) (prod. GRAY)",
+        "artist": "pH-1",
+        "video_key": "DRObzKH48Qw"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6963,
+    "pk": 6998,
+    "fields": {
+        "playlist_code": "405024652",
+        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
+        "type": 30000,
+        "chart": 262,
+        "title": "TEL\u00c9FONO (feat. \uae40\ud558\uc628, Woodie Gochild, \ubc15\uc7ac\ubc94, \uc2dd\ucf00\uc774) (prod. WOOGIE)",
+        "artist": "pH-1",
+        "video_key": "FiCD2jhG0QM"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 6999,
+    "fields": {
+        "playlist_code": "405024652",
+        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
+        "type": 30000,
+        "chart": 552,
+        "title": "SPIT! (Feat. \ucfe0\uae30)(Prod. GXXD)",
+        "artist": "Blase (\ube14\ub77c\uc138)",
+        "video_key": "m9qTTYTRw58"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7000,
+    "fields": {
+        "playlist_code": "405024652",
+        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
+        "type": 30000,
+        "chart": 559,
+        "title": "PACKITUP! (prod. BMTJ)",
+        "artist": "pH-1",
+        "video_key": "ef_P4Fod1C0"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7001,
+    "fields": {
+        "playlist_code": "405024652",
+        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
+        "type": 30000,
+        "chart": 561,
+        "title": "Foreign (Feat. pH-1)(Prod. GooseBumps)",
+        "artist": "Blase (\ube14\ub77c\uc138)",
+        "video_key": "qGOoJoD1Aqk"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7002,
     "fields": {
         "playlist_code": "405024652",
         "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
         "type": 30000,
         "chart": 574,
-        "title": "BIRTHDAY (Prod. AQUINAS)",
-        "artist": "ITOWNKID",
-        "video_key": "RrDDm40Tfws"
+        "title": "\uc591\uc544\uce58 (Yang-Ah-Chi)",
+        "artist": "\uc218\ud37c\ube44",
+        "video_key": "eNsLBleGA4A"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6964,
-    "fields": {
-        "playlist_code": "428205764",
-        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
-        "type": 30000,
-        "chart": 1,
-        "title": "\uad50\ucc28\ub85c (Crossroads)",
-        "artist": "\uc5ec\uc790\uce5c\uad6c (GFRIEND)",
-        "video_key": "kx5TWKPE5sU"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6965,
-    "fields": {
-        "playlist_code": "428205764",
-        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
-        "type": 30000,
-        "chart": 2,
-        "title": "Thumbs Up",
-        "artist": "\ubaa8\ubaa8\ub79c\ub4dc (MOMOLAND)",
-        "video_key": "TbuP2ypiTRc"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6966,
+    "pk": 7003,
     "fields": {
         "playlist_code": "405024652",
         "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
         "type": 30000,
         "chart": 577,
-        "title": "\uadf8\ub77c\ud0c0\ud0c0",
-        "artist": "\ube14\ub799\ub11b (Black Nut)",
-        "video_key": "xIzQpDRkD5c"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6967,
-    "fields": {
-        "playlist_code": "428205764",
-        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
-        "type": 30000,
-        "chart": 1,
-        "title": "Special Girl (Feat. Bumkey)",
-        "artist": "\uc778\ud53c\ub2c8\ud2b8H",
-        "video_key": "b281MAGI5G0"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6968,
-    "fields": {
-        "playlist_code": "428205764",
-        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
-        "type": 30000,
-        "chart": 2,
-        "title": "24/7",
-        "artist": "2YOON (\ud3ec\ubbf8\ub2db \ud22c\uc724)",
-        "video_key": "xZKtHjmWYpY"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6969,
-    "fields": {
-        "playlist_code": "428205764",
-        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
-        "type": 30000,
-        "chart": 3,
-        "title": "WANNABE",
-        "artist": "ITZY (\uc788\uc9c0)",
-        "video_key": "fE2h3lGlOsk"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6970,
-    "fields": {
-        "playlist_code": "430351696",
-        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
-        "type": 30000,
-        "chart": 1,
-        "title": "\u305d\u306e\u58f0\u304c\u805e\u304d\u305f\u304f\u3066 / Sono Koega Kikitakute",
-        "artist": "Fujita Maiko",
-        "video_key": "NTJdo7glCME"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6971,
-    "fields": {
-        "playlist_code": "430351696",
-        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
-        "type": 30000,
-        "chart": 2,
-        "title": "Sense of wonder",
-        "artist": "sumika",
-        "video_key": "-u0FCKnYtN4"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6972,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 1,
-        "title": "Set Go! (Feat. \uae30\ub9ac\ubcf4\uc774, \uc0ac\uc774\uba3c \ub3c4\ubbf8\ub2c9)",
-        "artist": "\ucfe0\uae30 (Coogie)",
-        "video_key": "-0YoW5nsP2M"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6973,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 558,
-        "title": "EA$Y",
-        "artist": "Los",
-        "video_key": "abpx7ZU_mLs"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6974,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 565,
-        "title": "In My Cup (Feat. BILL STAX)",
-        "artist": "\ucfe0\uae30 (Coogie)",
-        "video_key": "ESxfWZw7RWE"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6975,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 567,
-        "title": "\ub5a0\ub098\uc57c",
+        "title": "\ubc95\uc778\uc0ac\uc5c5\uc790 Freestyle",
         "artist": "\uc218\ud37c\ube44",
-        "video_key": "FrlC57GD-Uw"
+        "video_key": "KbBIqnaUY1I"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6976,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 570,
-        "title": "GOD GOD GOD",
-        "artist": "EK",
-        "video_key": "yIrEBuF556g"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6977,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 576,
-        "title": "\ub09c \ub188",
-        "artist": "\uc624\ub514(ODEE)",
-        "video_key": "AGtxSSyOVPc"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6978,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 577,
-        "title": "DO MAIN 2020 (Feat. Lil Boi, Ugly Duck, ZICO, \ud14c\uc774\ud06c\uc6d0) (Prod. GooseBumps)",
-        "artist": "\uc2dd\ucf00\uc774 (Sik-K)",
-        "video_key": "bjeuPOqOUfA"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6979,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 578,
-        "title": "\uc774\ubcd1 \ub3c4\uc775\ud658 (Prod. Cloudy beats)",
-        "artist": "EK",
-        "video_key": "wMVnp7FeUxs"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6980,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 579,
-        "title": "Selfmade Orange 2 (feat. Changmo, Paul Blanco)",
-        "artist": "\uc218\ud37c\ube44",
-        "video_key": "yhXY0eofO2k"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6981,
+    "pk": 7004,
     "fields": {
         "playlist_code": "405024652",
         "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
         "type": 30000,
         "chart": 580,
-        "title": "\ub3d9\uc218 (Feat. KOR KASH)",
-        "artist": "\ud0b9\uce58\uba54\uc778",
-        "video_key": "JcwrMC4EeYw"
+        "title": "VROOM",
+        "artist": "\ub808\ub514 (Reddy)",
+        "video_key": "OTuGvoPDbtE"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6982,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 581,
-        "title": "WOO",
-        "artist": "Ash-B (\uc560\uc26c\ube44)",
-        "video_key": "Nls13FhXxzw"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6983,
+    "pk": 7005,
     "fields": {
         "playlist_code": "405024652",
         "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
         "type": 30000,
         "chart": 582,
-        "title": "BIG MAD",
-        "artist": "Los",
-        "video_key": "knCVI1UdII8"
+        "title": "BOY Remix",
+        "artist": "Kid Milli",
+        "video_key": "_W5M8gxqhGA"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6984,
+    "pk": 7006,
     "fields": {
         "playlist_code": "428205764",
         "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
         "type": 30000,
         "chart": 1,
-        "title": "\ud30c\ud30c\ub77c\uce58 (Feat. \uc5d0\ub9ad)",
-        "artist": "\uac04\ubbf8\uc5f0",
-        "video_key": "OmvV4oc668s"
+        "title": "\ubcc4\ube5b\ub2ec\ube5b",
+        "artist": "\uc2dc\ud06c\ub9bf",
+        "video_key": "iTVfJ1j7o-A"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 6985,
+    "pk": 7007,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 2,
+        "title": "\ube60\ube60\ube60 (Bar Bar Bar)",
+        "artist": "\ud06c\ub808\uc6a9\ud31d",
+        "video_key": "yMqL1iWfku4"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7008,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 3,
+        "title": "Dolphin",
+        "artist": "\uc624\ub9c8\uc774\uac78",
+        "video_key": "YrHeMqAx_HE"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7009,
+    "fields": {
+        "playlist_code": "425182189",
+        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
+        "type": 30000,
+        "chart": 452,
+        "title": "My Man",
+        "artist": "\ub2e4\ube44\uce58",
+        "video_key": "kwAlg7FUqHY"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7010,
+    "fields": {
+        "playlist_code": "445858143",
+        "playlist_name": "\u266c \ud765\uc774\ub780\uac8c \ud3ed\ubc1c\ud55c\ub2e4 \u266c \ubbf8\uce5c\ub4ef\uc774 \ud130\uc9c0\ub294 \ud074\ub7fd EDM~\u2661 #12",
+        "type": 30000,
+        "chart": 5,
+        "title": "Astronomia",
+        "artist": "Vicetone",
+        "video_key": "iLBBRuVDOo4"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7011,
+    "fields": {
+        "playlist_code": "445858143",
+        "playlist_name": "\u266c \ud765\uc774\ub780\uac8c \ud3ed\ubc1c\ud55c\ub2e4 \u266c \ubbf8\uce5c\ub4ef\uc774 \ud130\uc9c0\ub294 \ud074\ub7fd EDM~\u2661 #12",
+        "type": 30000,
+        "chart": 26,
+        "title": "The Way We Bleed (Feat. Nikki Vianna)",
+        "artist": "Yellow Claw",
+        "video_key": "QIpIRPJMBfY"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7012,
+    "fields": {
+        "playlist_code": "445858143",
+        "playlist_name": "\u266c \ud765\uc774\ub780\uac8c \ud3ed\ubc1c\ud55c\ub2e4 \u266c \ubbf8\uce5c\ub4ef\uc774 \ud130\uc9c0\ub294 \ud074\ub7fd EDM~\u2661 #12",
+        "type": 30000,
+        "chart": 38,
+        "title": "El Terror (Feat. Jon Z & Lil Toe)",
+        "artist": "Yellow Claw",
+        "video_key": ""
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7013,
     "fields": {
         "playlist_code": "430351696",
         "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
         "type": 30000,
         "chart": 1,
-        "title": "Light The Light",
-        "artist": "RADWIMPS (\ub798\ub4dc\uc714\ud504\uc2a4)",
-        "video_key": "BNpcNE2-c6g"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6986,
-    "fields": {
-        "playlist_code": "430351696",
-        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
-        "type": 30000,
-        "chart": 2,
-        "title": "tell me tell me",
-        "artist": "m-flo loves Sik-K",
-        "video_key": "YIsHQg-qq_s"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6987,
-    "fields": {
-        "playlist_code": "430351696",
-        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
-        "type": 30000,
-        "chart": 3,
-        "title": "ESKRRRP",
-        "artist": "TOPHAMHATKYO",
-        "video_key": "RN4JcAZv2zQ"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 6988,
-    "fields": {
-        "playlist_code": "430351696",
-        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
-        "type": 30000,
-        "chart": 4,
-        "title": "Jet",
-        "artist": "POLKADOT STINGRAY",
-        "video_key": "phwvj0_XM4k"
+        "title": "\u305a\u3063\u3068\u3001\u3075\u305f\u308a\u3067 / Zutto Futaride",
+        "artist": "Ieiri Leo",
+        "video_key": "wW7EuOtSTvk"
     }
 }
 ]
