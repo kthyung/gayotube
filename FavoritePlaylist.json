@@ -1,379 +1,301 @@
 [
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 7081,
+    "pk": 7110,
     "fields": {
         "playlist_code": "428205764",
         "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
         "type": 30000,
         "chart": 1,
-        "title": "\uac10\uc2f8\uc904\uac8c\uc694",
-        "artist": "DIA (\ub2e4\uc774\uc544)",
-        "video_key": "A7TS7qrhFxc"
+        "title": "How You Like That",
+        "artist": "BLACKPINK",
+        "video_key": "ioNng23DkIM"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 7082,
+    "pk": 7111,
     "fields": {
-        "playlist_code": "428205764",
-        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "playlist_code": "425182189",
+        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
         "type": 30000,
-        "chart": 2,
-        "title": "\ub178\ud06c (KNOCK)",
-        "artist": "\ub124\uc2a4\ud2f0\ub124\uc2a4\ud2f0 (\ucf00\ube48, \uacbd\ub9ac, \uc18c\uc9c4)",
-        "video_key": "5MTNJALBXzs"
+        "chart": 185,
+        "title": "\ud5e4\uc5b4\uc9c0\ub358 \ub0a0",
+        "artist": "\uc81c\uc544\ud30c\uc774\ube0c",
+        "video_key": "rwSOWtPPUM8"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 7083,
+    "pk": 7112,
     "fields": {
         "playlist_code": "430351696",
         "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
         "type": 30000,
         "chart": 1,
-        "title": "\u307b\u3046\u304d\u661f / Houkiboshi (\ud61c\uc131)",
-        "artist": "\uaddc\ud604 (KYUHYUN)",
-        "video_key": "iHAsaMYy70k"
+        "title": "Nonstop (Japanese Version)",
+        "artist": "\uc624\ub9c8\uc774\uac78",
+        "video_key": "6soIY1TzIS8"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 7084,
+    "pk": 7113,
     "fields": {
         "playlist_code": "430351696",
         "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
         "type": 30000,
         "chart": 2,
-        "title": "Umbrella",
-        "artist": "SEKAI NO OWARI",
-        "video_key": "p7X-hT1v4Vk"
+        "title": "Bad Girl for You",
+        "artist": "EXID",
+        "video_key": "34tjYE18yT0"
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 7085,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 142,
-        "title": "OYEAH",
-        "artist": "OLNL (\uc624\ub974\ub0b4\ub9bc)",
-        "video_key": "6XREIYsmWWc"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7086,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 402,
-        "title": "HELLP",
-        "artist": "RYNO (\ub77c\uc774\ub178)",
-        "video_key": "EOhZNT3a1ko"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7087,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 452,
-        "title": "\uc720\uae30\ub18d (Feat. Reddy, NO:EL)",
-        "artist": "\ud55c\ud574",
-        "video_key": "595hs1Ri-V4"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7088,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 469,
-        "title": "ITX (Feat. \ucc3d\ubaa8 (CHANGMO))",
-        "artist": "ZENE THE ZILLA",
-        "video_key": "_CQenyWmQI0"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7089,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 470,
-        "title": "Neo Christian Flow",
-        "artist": "BewhY (\ube44\uc640\uc774)",
-        "video_key": "TdB5wGAjSvk"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7090,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 474,
-        "title": "One Life (Feat. Kidk Kidk)",
-        "artist": "\uc218\ud37c\ube44",
-        "video_key": "blEmcAILuj8"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7091,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 476,
-        "title": "OKGO2 (Prod. HOLYDAY)",
-        "artist": "Don Mills",
-        "video_key": "rlpo-kvrnCo"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7092,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 477,
-        "title": "\ud558\uc9c0 \ub9d0\ub780 \uac83\ub9cc \uace8\ub77c\uc11c \ud574 (Feat. \ubd80\ud604\uc11d)",
-        "artist": "\ucc28\uba54\uc778 (ChaMane)",
-        "video_key": "_f-1-GRaRbI"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7093,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 478,
-        "title": "\u3134\u3134\u3134",
-        "artist": "Chaboom",
-        "video_key": "kYyDWyulxIM"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7094,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 479,
-        "title": "\ud55c\uad6d",
-        "artist": "\uc870\uad11\uc77c",
-        "video_key": "mKUJrghUHLY"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7095,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 480,
-        "title": "\ube0c\ub808\uc4f0 (Feat. BILL STAX)",
-        "artist": "\uc624\ub2f4\ub960 (\uae40\ub18d\ubc00)",
-        "video_key": "oNQ-6pgEmXA"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7096,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 481,
-        "title": "PASS OUT",
-        "artist": "\uac1c\ucf54",
-        "video_key": "WX7V8OG5O0E"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7097,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 482,
-        "title": "Goin' Nuts (Feat. \uc218\ud37c\ube44, ZENE THE ZILLA)",
-        "artist": "Way Ched (\uc6e8\uc774\uccb4\ub4dc)",
-        "video_key": "Rc2R6jlqEQE"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7098,
-    "fields": {
-        "playlist_code": "405024652",
-        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
-        "type": 30000,
-        "chart": 484,
-        "title": "LOL (prod. SQUAR)",
-        "artist": "sokodomo",
-        "video_key": "sOayNRo626c"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7099,
-    "fields": {
-        "playlist_code": "428205764",
-        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
-        "type": 30000,
-        "chart": 1,
-        "title": "\ube44\ud589\uae30",
-        "artist": "\uac70\ubd81\uc774",
-        "video_key": "bmrOg3ZnMHc"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7100,
-    "fields": {
-        "playlist_code": "425182189",
-        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
-        "type": 30000,
-        "chart": 81,
-        "title": "PHOENIX",
-        "artist": "\uc81c\uad6d\uc758\uc544\uc774\ub4e4 (ZE:A)",
-        "video_key": "namWX50Po7Y"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7101,
-    "fields": {
-        "playlist_code": "425182189",
-        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
-        "type": 30000,
-        "chart": 491,
-        "title": "Watch Out!!",
-        "artist": "\uc81c\uad6d\uc758\uc544\uc774\ub4e4 (ZE:A)",
-        "video_key": "DCmk7giedlU"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7102,
-    "fields": {
-        "playlist_code": "425182189",
-        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
-        "type": 30000,
-        "chart": 536,
-        "title": "Hey U",
-        "artist": "\uc0e4\ud06c\ub77c",
-        "video_key": "gRn6ArHyIOs"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7103,
-    "fields": {
-        "playlist_code": "425182189",
-        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
-        "type": 30000,
-        "chart": 543,
-        "title": "\ub09c \ub108\uc5d0\uac8c",
-        "artist": "\uc0e4\ud06c\ub77c",
-        "video_key": "9-6HSZjUvnY"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7104,
-    "fields": {
-        "playlist_code": "425182189",
-        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
-        "type": 30000,
-        "chart": 647,
-        "title": "\ud55c (Come A Come)",
-        "artist": "\uc0e4\ud06c\ub77c",
-        "video_key": "iZKcXJYIIrM"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7105,
-    "fields": {
-        "playlist_code": "425182189",
-        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
-        "type": 30000,
-        "chart": 684,
-        "title": "MAXIMUM",
-        "artist": "\ub3d9\ubc29\uc2e0\uae30 (TVXQ!)",
-        "video_key": "5CuwvJiArgo"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7106,
-    "fields": {
-        "playlist_code": "430351696",
-        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
-        "type": 30000,
-        "chart": 1,
-        "title": "narrative (Remastered)",
-        "artist": "SawanoHiroyuki(nZk)",
-        "video_key": "fPqopvu2TPw"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7107,
-    "fields": {
-        "playlist_code": "430351696",
-        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
-        "type": 30000,
-        "chart": 2,
-        "title": "aLIEz (Remastered)",
-        "artist": "SawanoHiroyuki(nZk)",
-        "video_key": "HZF9qy14ACE"
-    }
-},
-{
-    "model": "video.favoriteplaylistvideo",
-    "pk": 7108,
+    "pk": 7114,
     "fields": {
         "playlist_code": "430351696",
         "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
         "type": 30000,
         "chart": 3,
-        "title": "\u5e7b\u60f3\u7ae5\u8a71 (Secret Story of the Swan) (Japanese Ver.)",
-        "artist": "IZ*ONE (\uc544\uc774\uc988\uc6d0)",
-        "video_key": "BEbQ7EU3A2Q"
+        "title": "\u8e0a\u3089\u305b\u306a\u3044\u3067 (\ucda4\ucd94\uac8c \ud558\uc9c0\ub9c8, Odorasenaide)",
+        "artist": "eill",
+        "video_key": ""
     }
 },
 {
     "model": "video.favoriteplaylistvideo",
-    "pk": 7109,
+    "pk": 7115,
+    "fields": {
+        "playlist_code": "430351696",
+        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
+        "type": 30000,
+        "chart": 4,
+        "title": "\u6708\u5149 / Gekkou (\uc6d4\uad11)",
+        "artist": "Onitsuka Chihiro",
+        "video_key": "G1KnUTA3pCI"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7116,
     "fields": {
         "playlist_code": "430351696",
         "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
         "type": 30000,
         "chart": 5,
-        "title": "umbrella",
-        "artist": "SEKAI NO OWARI",
-        "video_key": "p7X-hT1v4Vk"
+        "title": "Konna Yofukewa",
+        "artist": "Glim Spanky",
+        "video_key": "4aBEueudZjY"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7117,
+    "fields": {
+        "playlist_code": "405024652",
+        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
+        "type": 30000,
+        "chart": 480,
+        "title": "D.TT.K Remix (Feat. LIL TRACKTOP, ACHILLO, Bloodzboi & YUNG HIROPON)",
+        "artist": "FUTURISTIC SWAVER",
+        "video_key": "2dHoBJXhrCw"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7118,
+    "fields": {
+        "playlist_code": "445858143",
+        "playlist_name": "\u266c \ud765\uc774\ub780\uac8c \ud3ed\ubc1c\ud55c\ub2e4 \u266c \ubbf8\uce5c\ub4ef\uc774 \ud130\uc9c0\ub294 \ud074\ub7fd EDM~\u2661 #12",
+        "type": 30000,
+        "chart": 20,
+        "title": "Devil Inside Me (feat. KARRA) [KAAZE Remode]",
+        "artist": "Kshmr",
+        "video_key": "FDD_2QV2z6c"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7119,
+    "fields": {
+        "playlist_code": "445858143",
+        "playlist_name": "\u266c \ud765\uc774\ub780\uac8c \ud3ed\ubc1c\ud55c\ub2e4 \u266c \ubbf8\uce5c\ub4ef\uc774 \ud130\uc9c0\ub294 \ud074\ub7fd EDM~\u2661 #12",
+        "type": 30000,
+        "chart": 218,
+        "title": "Secrets (Diplo Remix) (Feat. Vassy)",
+        "artist": "Tiesto",
+        "video_key": "h6Kg56CPOJE"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7120,
+    "fields": {
+        "playlist_code": "445858143",
+        "playlist_name": "\u266c \ud765\uc774\ub780\uac8c \ud3ed\ubc1c\ud55c\ub2e4 \u266c \ubbf8\uce5c\ub4ef\uc774 \ud130\uc9c0\ub294 \ud074\ub7fd EDM~\u2661 #12",
+        "type": 30000,
+        "chart": 275,
+        "title": "Secrets (Don Diablo\u2019s VIP Mix) (Feat. Vassy)",
+        "artist": "Tiesto",
+        "video_key": "UHXPkmeL0WY"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7121,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 1,
+        "title": "\ub2e4\uc2dc \uc5ec\uae30 \ubc14\ub2f7\uac00",
+        "artist": "\uc2f9\uc4f0\ub9ac (\uc720\ub450\ub798\uace4, \ub9b0\ub2e4G, \ube44\ub8e1)",
+        "video_key": "f48G9rGVOQU"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7122,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 27,
+        "title": "\ub364\ub354\ub7fc (Dumhdurum)",
+        "artist": "Apink (\uc5d0\uc774\ud551\ud06c)",
+        "video_key": "WqzTRK5GPWQ"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7123,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 109,
+        "title": "%% (\uc751\uc751)",
+        "artist": "Apink (\uc5d0\uc774\ud551\ud06c)",
+        "video_key": "499YUeNoYVE"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7124,
+    "fields": {
+        "playlist_code": "425182189",
+        "playlist_name": "\uc228\uc5b4\uc11c \ub4e3\ub294 \ub178\ub798>> I D O L >>",
+        "type": 30000,
+        "chart": 36,
+        "title": "%% (\uc751\uc751)",
+        "artist": "Apink (\uc5d0\uc774\ud551\ud06c)",
+        "video_key": "499YUeNoYVE"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7125,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 1,
+        "title": "\uac54 \uc138",
+        "artist": "WINNER",
+        "video_key": "iQnAL-f2grI"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7126,
+    "fields": {
+        "playlist_code": "428205764",
+        "playlist_name": "\uc2e0\ub098\ub294 \uc544\uc774\ub3cc \ub178\ub798 \ub4e3\uace0\uc2dc\ud391?(\uc0c1\uc2dc\uc5c5\ub383)",
+        "type": 30000,
+        "chart": 2,
+        "title": "\ud55c \ud398\uc774\uc9c0\uac00 \ub420 \uc218 \uc788\uac8c",
+        "artist": "DAY6 (\ub370\uc774\uc2dd\uc2a4)",
+        "video_key": "vnS_jn2uibs"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7127,
+    "fields": {
+        "playlist_code": "405024652",
+        "playlist_name": "\uc2a4\ud2b8\ub808\uc2a4 \ud480\uae30 \uc88b\uc740 \ube44\ud2b8 \uc88b\uc740 \uad6d\ub0b4 \ud799\ud569",
+        "type": 30000,
+        "chart": 486,
+        "title": "Waves (feat. \uc0ac\uc774\uba3c \ub3c4\ubbf8\ub2c9, Jamie)",
+        "artist": "\uac15\ub2e4\ub2c8\uc5d8",
+        "video_key": "SlNTVljJf3g"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7128,
+    "fields": {
+        "playlist_code": "430351696",
+        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
+        "type": 30000,
+        "chart": 1,
+        "title": "Angel",
+        "artist": "\u3061\u3083\u3093\u307f\u306a (CHANMINA)",
+        "video_key": "fOUfYU2NEJU"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7129,
+    "fields": {
+        "playlist_code": "430351696",
+        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
+        "type": 30000,
+        "chart": 1,
+        "title": "Night D",
+        "artist": "eill",
+        "video_key": "iLUy-f1-6cE"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7130,
+    "fields": {
+        "playlist_code": "430351696",
+        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
+        "type": 30000,
+        "chart": 2,
+        "title": "Kanden",
+        "artist": "Yonezu Kenshi",
+        "video_key": "UFQEttrn6CQ"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7131,
+    "fields": {
+        "playlist_code": "430351696",
+        "playlist_name": "jpop \ubc31\uacfc\uc0ac\uc804ver.3.0",
+        "type": 30000,
+        "chart": 3,
+        "title": "zekkyoserenade",
+        "artist": "sumika",
+        "video_key": "dlORj1YJPSk"
+    }
+},
+{
+    "model": "video.favoriteplaylistvideo",
+    "pk": 7132,
+    "fields": {
+        "playlist_code": "438219771",
+        "playlist_name": "\u2022 2000\ub144~ 2011 \ub144\ub300 \uc2e0\ub098\ub294 \ub178\ub798 \u2728",
+        "type": 30000,
+        "chart": 40,
+        "title": "\uc644\uc18c\uadf8\ub300",
+        "artist": "\uc11c\uc601\uc740",
+        "video_key": "KpGxhkqEsvo"
     }
 }
 ]
